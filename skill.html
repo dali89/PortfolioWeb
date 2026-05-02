@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+
+:root{
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+}
+
+
+/* --- Heading Style --- */
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--main-color); /* #00abf0 */
+    
+}
+
+
+
+
+/* --- Skills Section Container --- */
+.skills {
+    background: var(--second-bg-color); /* #112e42 */
+    padding: 10rem 9% 8rem;
+    text-align: center;
+}
+
+.skills .heading {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* White color for "My" */
+}
+
+.skills-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    color: #aaa;
+}
+
+/* --- Container for Cards --- */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* --- Individual Skill Card --- */
+.skill-card {
+    background: var(--bg-color); /* #081b29 */
+    padding: 3rem;
+    width: 30rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s ease;
+    text-align: left;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--main-color);
+    box-shadow: 0 0 25px rgba(0, 171, 240, 0.4);
+}
+
+.skill-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+}
+
+/* Skill Level (Percentage/Text) */
+.skill-card ul li span {
+    font-size: 1.2rem;
+    color: #00ff88; /* Greenish glow for level */
+}
+
+    </style>
+</head>
+<body>
+
+
+  <section class="skills" id="skills">
+    <h2 class="heading">Skills & <span>Technologies</span></h2>
+    <p class="skills-subtitle">
+        Tools and technologies I work with to bring ideas to life
+    </p>
+    
+    <div class="skills-container">
+
+        <!-- Frontend -->
+        <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML <span>Advanced</span></li>
+                <li>CSS <span>Advanced</span></li>
+                <li>JavaScript <span>Intermediate</span></li>
+                <li>Figma<span>Intermediate</span></li>
+            </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+                <li>Java <span>Advanced</span></li>
+                <li>Advanced Java <span>Advanced</span></li>
+                <li>MySQL <span>Advanced</span></li>
+                <li>REST APIs <span>Intermediate</span></li>
+            </ul>
+        </div>
+
+        <!-- DevOps -->
+        <div class="skill-card">
+            <h3>DevOps & Tools</h3>
+            <ul>
+                <li>Git <span>Advanced</span></li>
+                <li>GitHub <span>Advanced</span></li>
+                <!-- <li> <span>Intermediate</span></li> -->
+                <li>VS Code <span>Advanced</span></li>
+               
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+</body>
